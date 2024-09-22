@@ -60,8 +60,8 @@ function initializeMusic(){
  document.body.classList.remove('mar', 'queen', 'violin');
  if(playlist[index].file === 'Bea-Duarte-Mar'){
     document.body.classList.add('mar');
- }if(playlist[index].flie === 'Loren-Gray-Queen'){
-    body.classList.add('queen');
+ }else if(playlist[index].file === 'Loren-Gray-Queen'){
+    document.body.classList.add('queen');
  }else{
     document.body.classList.add('violin');
  }
