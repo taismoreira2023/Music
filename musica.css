@@ -7,13 +7,10 @@
     --color-primary6:#80463e;
     --color-primary7:#fdbf56;
     --color-primary8:#725625;
+    --progress: 0%;
 
 }
 
-.colorMusicMar{
-    --fontColor1: var(--color-primary4)
-    --fontColor2: var(--color-primary5)
-}
 
 body{
     background-image: linear-gradient(
@@ -60,7 +57,8 @@ button{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
+    
 }
 #song-info p{
     margin: 2px;
@@ -87,38 +85,57 @@ button{
 .button{
     font-size: 1.5em;
 }
-
+button{
+    cursor: pointer;
+}
 .button-navigation{
     font-size: 3em;
 }
 .button-biggest{
     font-size: 4em;
 }
-#temp {
+#progress-bar {
     height: 3px;
     width: 100%;
     background-color: var(--color-primary3);
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 #progress{
+    
     background-color: var(--color-primary1);
     height: inherit;/*faz ter a mesma height do pai*/
-    width: 50%;
+    width: var(--progress);
     border-radius: inherit;/*herda a borda do pai*/
 }
-
+#time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #ffffffa3;
+}
 #title-playlist{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 4em;
+    margin-bottom: 2.2em;
 }
 
 #cover{
-    width: 430px;
+    width: 380px;
 }
 
+#container_progress{
+    padding-bottom: 1em;
+    cursor: pointer;
+}
 
+.button-active{
+    color: rgb(18, 200, 18);
+}
 
+.like-active{
+    color: rgb(238, 29, 29);
+}
 
